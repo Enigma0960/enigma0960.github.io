@@ -1,3 +1,9 @@
 theme: minima
 domain: enigma0960.github.io
 url: https://enigma0960.github.io
+
+title: Блог Enigma0960
+author:
+  name: Igor Supryadkin
+  email: igorsupr@google.com
+description: > Мой личный блог, где я делюсь своим опытом в разработке и реверс-инжиниринге.
