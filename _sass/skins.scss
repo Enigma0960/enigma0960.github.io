@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+
+$lm-background-color: #fdfdfd !default;
+$lm-brand-color: #828282 !default;
+
+$lm-brand-color-light: lighten($lm-brand-color, 40%);
+$lm-brand-color-dark: darken($lm-brand-color, 25%) !default;
+
+$lm-border-color-01: $lm-brand-color-light !default;
+$lm-border-color-02: lighten($lm-brand-color, 35%) !default;
+$lm-border-color-03: $lm-brand-color-dark !default;
+
+$border-color-01: $lm-border-color-01;
+$border-color-02: $lm-border-color-02;
+$border-color-03: $lm-border-color-03;
+
+$background-color: $lm-background-color;

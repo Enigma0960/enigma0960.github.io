@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+
+$lm-text-color: #111111 !default;
+
+$base-font-size: 16px !default;
+$base-font-weight: 400 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit: 30px !default;
+
+$on-palm: 600px !default;
+$on-laptop: 800px !default;
+
+$text-color: $lm-text-color;
+
+$on-medium: $on-palm !default;
+$on-large: $on-laptop !default;
+
+
+@import "base", "layout";
