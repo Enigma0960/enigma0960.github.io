@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Обо мне
+page_index: 10
 permalink: /about/
 ---
 
