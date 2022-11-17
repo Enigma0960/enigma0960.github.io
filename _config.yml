@@ -1,6 +1,6 @@
 theme: minima
-domain: enigma0960.github.io
-url: https://enigma0960.github.io
+plugins:
+  - jekyll-feed
 
 title: Блог Enigma0960
 author:
