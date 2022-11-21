@@ -21,7 +21,7 @@ permalink: /post/
             <a class="post-link" href="{{ post.url | relative_url }}">
                 {{ post.title | escape }}
             </a>
-            <p class="post-content">{{ post.post_description }}</p>
+            <p class="post-content">{{ post.post_description | escape }}</p>
         </li>
     </ul>
     {%- endfor -%}

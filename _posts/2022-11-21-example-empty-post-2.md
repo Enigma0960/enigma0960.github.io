@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Example test empty post 2"
-post_description: Краткое описание 1
+post_description: "Краткое описание 2"
 ---
 
 # Example test empty post 2
