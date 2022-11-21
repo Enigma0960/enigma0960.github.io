@@ -11,7 +11,7 @@
             </label>
             <div class="trigger">
                 {%- assign index_page = site.pages | where: "name", "index.md" | first -%}
-                {%- assign posts_page = site.pages | where: "name", "posts.md" | first -%}
+                {%- assign posts_page = site.pages | where: "name", "posts.html" | first -%}
                 {%- assign about_page = site.pages | where: "name", "about.md" | first -%}
 
                 <a class="page-link" href="{{ index_page.url | relative_url }}">{{ index_page.title | escape }}</a>
