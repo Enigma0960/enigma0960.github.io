@@ -1,3 +1,3 @@
 # Репозиторий личного блога
 
-Для создания сайта я использовал код взяты из темы [minima](https://github.com/jekyll/minima)
+Для создания сайта я использовал код, взятый из темы [minima](https://github.com/jekyll/minima)
