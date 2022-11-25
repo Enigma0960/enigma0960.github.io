@@ -1,0 +1,28 @@
+---
+layout: page
+title: Статьи
+permalink: /post/
+
+---
+
+{% if site.paginate %}
+{% assign posts = paginator.posts %}
+{% else %}
+{% assign posts = site.posts %}
+{% endif %}
+
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+<div class="post-content">
+    {%- for post in posts -%}
+    <ul class="post-list">
+        <li>
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+            </a>
+            <p class="post-content">{{ post.post_description | escape }}</p>
+        </li>
+    </ul>
+    {%- endfor -%}
+</div>

@@ -1,1 +1,7 @@
-# Мой личный блог
+---
+layout: home
+title: Главная
+permalink: /
+---
+
+
