@@ -1,6 +1,17 @@
 ---
 layout: default
 ---
+<div class="site-header-image" style="background-image: url('{{ "assets/img/index-header.jpg" | relative_url }}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <span class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="home">
     {{ content }}
