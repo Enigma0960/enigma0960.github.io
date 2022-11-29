@@ -3,6 +3,7 @@
 
 
 .site-header-image {
+  background-image: url('{{ "assets/img/index-header.jpg" | relative_url }}');
   background-blend-mode: multiply;
   background: #919191 no-repeat scroll center center;
   -webkit-background-size: cover;
