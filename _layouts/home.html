@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="site-header-image">
+<div class="header-block site-header-image">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
@@ -13,20 +13,21 @@ layout: default
     </div>
 </div>
 
-<div class="main">
+<div class="main-block">
     {{ content }}
 </div>
 
-<div class="last-posts">
+<div class="last-posts-block">
     <h1>Последнии статьи</h1>
     {% for post in site.posts limit: 10 %}
-        {{ post }}
+    <h2><a href="{{post.url | relative_url }}">{{ post.title | escape }}</a></h2>
     {% endfor %}
 </div>
 
-<div class="tags">
+<div class="tags-block">
     <h1>Поиск по тегам</h1>
-    {% for tag in site,tags %}
-        <button class="tags-button">{{ tag[0] }}</button>
+    {% for tag in site.tags %}
+        {%- assign tag_page = "/tags/?" | append: tag[0] -%}
+        <a class="tags-button" href="{{ tag_page | relative_url }}">{{ tag[0] }}</a>
     {% endfor %}
 </div>

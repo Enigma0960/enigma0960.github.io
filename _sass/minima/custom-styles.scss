@@ -3,15 +3,18 @@
 
 
 .site-header-image {
-  background-image: url('{{ "assets/img/index-header.jpg" | relative_url }}');
+  background-image: url("/assets/img/index-header.jpg");
+  background-color: #919191;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   background-blend-mode: multiply;
-  background: #919191 no-repeat scroll center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 0;
-  opacity:95%;
+  opacity: 95%;
 }
 
 @media only screen and (min-width: 768px) {
