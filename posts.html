@@ -17,11 +17,17 @@ permalink: /post/
     {%- for post in posts -%}
     <ul class="post-list">
         <li>
+            {% if post.published %}
+            <span class="post-meta">{{ post.published | date: date_format }}</span>
+            {% else %}
             <span class="post-meta">{{ post.date | date: date_format }}</span>
+            {% endif %}
             <a class="post-link" href="{{ post.url | relative_url }}">
                 {{ post.title | escape }}
             </a>
-            <p class="post-content">{{ post.post_description | escape }}</p>
+            {% if post.description %}
+            <p class="post-content">{{ post.description | escape }}</p>
+            {% endif %}
         </li>
     </ul>
     {%- endfor -%}
