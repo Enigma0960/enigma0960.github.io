@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="header-block site-header-image">
+<div class="header-block site-header-image" xmlns="http://www.w3.org/1999/html">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
@@ -20,14 +20,14 @@ layout: default
 <div class="last-posts-block">
     <h1>Последнии статьи</h1>
     {% for post in site.posts limit: 10 %}
-    <h2><a href="{{post.url | relative_url }}">{{ post.title | escape }}</a></h2>
-    {% endfor %}
-</div>
-
-<div class="tags-block">
-    <h1>Поиск по тегам</h1>
-    {% for tag in site.tags %}
-        {%- assign tag_page = "/tags/?" | append: tag[0] -%}
-        <a class="tags-button" href="{{ tag_page | relative_url }}">{{ tag[0] }}</a>
+        <header class="post-header">
+            <a href="{{post.url | relative_url}}"><p class="post-title p-name" itemprop="name headline">{{ post.title | escape }}</p></a>
+            <p class="post-meta">
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                    {{ post.date | date: date_format }}
+                </time>
+            </p>
+        </header>
     {% endfor %}
 </div>
