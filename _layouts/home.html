@@ -19,7 +19,7 @@ layout: default
 </div>
 
 <div class="last-posts-block">
-    <h1>Последнии статьи</h1>
+    <h1>Последние статьи</h1>
     {% for post in site.posts limit: 10 %}
         <header class="post">
             <a href="{{post.url | relative_url}}"><p class="post-list-heading p-name">{{ post.title | escape }}</p></a>
