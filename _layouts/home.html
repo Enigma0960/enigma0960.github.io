@@ -20,8 +20,8 @@ layout: default
 <div class="last-posts-block">
     <h1>Последнии статьи</h1>
     {% for post in site.posts limit: 10 %}
-        <header class="post-header">
-            <a href="{{post.url | relative_url}}"><p class="post-title p-name" itemprop="name headline">{{ post.title | escape }}</p></a>
+        <header class="post">
+            <a href="{{post.url | relative_url}}"><p class="post-list-heading p-name">{{ post.title | escape }}</p></a>
             <p class="post-meta">
                 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                 <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
