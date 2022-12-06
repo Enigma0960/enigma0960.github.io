@@ -2,6 +2,33 @@
 layout: default
 ---
 
-<div class="home">
+<div class="header-block site-header-image" xmlns="http://www.w3.org/1999/html">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <span class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-block">
     {{ content }}
+</div>
+
+<div class="last-posts-block">
+    <h1>Последние статьи</h1>
+    {% for post in site.posts limit: 10 %}
+        <header class="post">
+            <a href="{{post.url | relative_url}}"><p class="post-list-heading p-name">{{ post.title | escape }}</p></a>
+            <p class="post-meta">
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                    {{ post.date | date: date_format }}
+                </time>
+            </p>
+        </header>
+    {% endfor %}
 </div>

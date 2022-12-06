@@ -1,7 +1,6 @@
 ---
 layout: home
-title: Главная
+title: "Главная"
 permalink: /
+description: "Enigma блог"
 ---
-
-

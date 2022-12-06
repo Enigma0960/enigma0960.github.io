@@ -1,2 +1,69 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+
+.site-header-image {
+  background-image: url("/assets/img/index-header.jpg");
+  background-color: #919191;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-blend-mode: multiply;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 0;
+  opacity: 95%;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-header-image {
+    margin-bottom: 20px;
+  }
+}
+
+.site-header-image .site-heading {
+  padding: 85px 0 55px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-header-image .site-heading {
+    padding: 150px 0;
+  }
+}
+
+.site-header-image .site-heading {
+  padding: 95px 0 70px;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-header-image .site-heading {
+    padding: 150px 0;
+  }
+}
+
+.site-header-image .site-heading {
+  text-align: center;
+}
+
+.site-header-image .site-heading h1 {
+  margin-top: 0;
+  font-size: 50px;
+}
+
+.site-header-image .site-heading .subheading {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-size: 36px;
+  line-height: 1.1;
+  display: block;
+  font-weight: 300;
+  margin: 10px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-header-image .site-heading h1 {
+    font-size: 80px;
+  }
+}
