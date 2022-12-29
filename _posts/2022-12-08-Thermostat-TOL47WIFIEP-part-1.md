@@ -15,7 +15,7 @@ tags: iot, smart-home, wifi, climate
 ## 2
 Изучив информацию и заметки многих авторов. Я нашел подходящее решение для реализации своей [концепции]({{ "/2022/12/06/Smart-home-concept.html" | relative_url }}) устройства умного дома. Особенностью данного контроллера является наличие Wifi модуля производства [Tuya WBR3](https://developer.tuya.com/en/docs/iot/wbr3-module-datasheet?id=K9dujs2k5nriy). Этот модуль является интерфейсом для экосистемы Tuya, но при этом он не является обязательной частью устройства. Все его свойства выполняет контроллер CMS8S5887. Дополнительно Особенностью этого контроллера, его полная аппаратная совместимость с модулем [ESP8685-WROOM-01](https://www.espressif.com/sites/default/files/documentation/esp8685-wroom-01_datasheet_en.pdf) или его аналога [ESP-12 Series](https://www.esp8266.com/wiki/doku.php?id=esp8266-module-family). Что это нам дает? К сожалению WBR3 и ESP8266 не совместимы программно... Тем самым мы можем просто подменить данный модуль. Останется только повторить [протокол общения](https://developer.tuya.com/en/docs/iot/tuya-cloud-universal-serial-port-access-protocol?id=K9hhi0xxtn9cb).
 
-<div id="image-line">
+<div class="image-line contain">
     <figure>
         <img src="/posts/TOL47WIFIEP/WBR3.png" alt="Модуль WBR3">
         <figcaption>Распиновка модуля WBR3</figcaption>
@@ -30,7 +30,7 @@ tags: iot, smart-home, wifi, climate
 
 # Изображения для статьи
 
-<div id="image-line">
+<div class="image-line">
     <figure>
         <img src="/posts/TOL47WIFIEP/device-appearance-1.jpg" alt="Внешний вид устройства">
         <figcaption>Лицевая панель в выключенном состояние</figcaption>
@@ -39,17 +39,21 @@ tags: iot, smart-home, wifi, climate
         <img src="/posts/TOL47WIFIEP/device-appearance-2.jpg" alt="Внешний вид устройства">
         <figcaption>Лицевая панель во включенном состояние</figcaption>
     </figure>
+    <figure>
+        <img src="/posts/TOL47WIFIEP/device-appearance-3.jpg" alt="Внешний вид устройства">
+        <figcaption>Задняя сторона устройства с клемами подключения</figcaption>
+    </figure>
 </div>
 
 
-<div id="image-line">
+<div class="image-line">
     <figure>
         <img src="/posts/TOL47WIFIEP/internal-organization-1.jpg" alt="Внутреннее устройство">
         <figcaption>Внутреннее устройство</figcaption>
     </figure>
 </div>
 
-<div id="image-line">
+<div class="image-line">
     <figure>
         <img src="/posts/TOL47WIFIEP/main-board-.jpg" alt="Основная плата устройства">
         <figcaption>Плата устройства</figcaption>
@@ -60,13 +64,17 @@ tags: iot, smart-home, wifi, climate
     </figure>
 </div>
 
-<div id="image-line">
+<div class="image-line">
     <figure>
-        <img src="/posts/TOL47WIFIEP/power-unit-1.jpg" alt="Источник питания">
+        <img src="/posts/TOL47WIFIEP/power-unit-1.jpg" alt="Внешний вид устройства">
+        <figcaption>Источник питания при открытии устройства</figcaption>
+    </figure>
+    <figure>
+        <img src="/posts/TOL47WIFIEP/power-unit-2.jpg" alt="Источник питания">
         <figcaption>Источник питания, разъемы и реле</figcaption>
     </figure>
     <figure>
-        <img src="/posts/TOL47WIFIEP/power-unit-2.jpg" alt="Внешний вид устройства">
+        <img src="/posts/TOL47WIFIEP/power-unit-3.jpg" alt="Внешний вид устройства">
         <figcaption>Обратная сторона источника питания</figcaption>
     </figure>
 </div>

@@ -1,16 +1,18 @@
-#image-line {
+.image-line {
   margin: 20px 0;
 
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  align-items: baseline;
 
   & > * {
     margin: 10px;
   }
 
   & figure {
+    width: 300px;
+
     figcaption {
       text-align: center;
     }
@@ -19,9 +21,12 @@
   & img {
     height: 300px;
     width: 300px;
-    object-fit: contain;
+    object-fit: cover;
   }
 }
 
-
-
+.contain {
+  & img {
+    object-fit: contain;
+  }
+}
