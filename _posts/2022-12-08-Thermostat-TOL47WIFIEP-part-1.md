@@ -56,6 +56,8 @@ tags: iot, smart-home, wifi, climate
 
 
 
+### Программный работы
+
 
 ## 1
 
@@ -78,9 +80,6 @@ tags: iot, smart-home, wifi, climate
 ## 3
 
 # Изображения для статьи
-
-
-
 
 {% imageblock %}
 - url: /posts/TOL47WIFIEP/internal-organization-1.jpg
