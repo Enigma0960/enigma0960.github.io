@@ -33,6 +33,54 @@ tags: iot, smart-home, wifi, climate
 Управление температурой осуществляется при помощи включения и выключения реле установленного в корпусе. Допустимая нагрузка составляет 16А. 
 
 
+### Интерфейс Устройства 
+
+#### Временной диапазон
+
+<img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-1.svg">
+
+В этой области располагаются иконки, отображающий текущую запись в расписании.
+
+* <img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-1-1.svg"> - 
+* <img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-1-2.svg"> - 
+* <img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-1-3.svg"> - 
+* <img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-1-4.svg"> - 
+* <img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-1-5.svg"> - 
+* <img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-1-6.svg"> - 
+
+
+#### День недели
+
+<img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-2.svg">
+
+
+#### Текущее время
+
+<img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-3.svg">
+
+
+#### Статус сети
+
+<img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-4.svg">
+
+
+#### Режим работы
+
+<img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-5.svg">
+
+
+#### Необходимая температура
+
+<img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-6.svg">
+
+
+#### Текущая температура
+
+<img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-7.svg">
+
+
+
+
 ### Назначение кнопок
 
 {% imageblock %}
@@ -42,14 +90,11 @@ tags: iot, smart-home, wifi, climate
 {% endimageblock %}
 
 
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/button_1.svg"> - Кнопка включения/выключения устройства.
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/button_2.svg"> - Кнопка выбора режима работы, ручной или автоматический.
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/button_3.svg"> - Кнопка входа в настройки устройства.
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/button_4.svg"> - Кнопка увеличения температуры или навигации.
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/button_5.svg"> - Кнопка уменьшения температуры или навигации.
-
-
-
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/button-1.svg"> - Кнопка включения/выключения устройства.
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/button-2.svg"> - Кнопка выбора режима работы, ручной или автоматический.
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/button-3.svg"> - Кнопка входа в настройки устройства.
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/button-4.svg"> - Кнопка увеличения температуры или навигации.
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/button-5.svg"> - Кнопка уменьшения температуры или навигации.
 
 
 ## Режимы работы
