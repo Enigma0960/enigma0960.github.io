@@ -86,7 +86,9 @@ tags: iot, smart-home, wifi, climate
 
 <img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-5.svg">
 
-
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/app-work-mode-1.jpg"> - 
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/app-work-mode-2.jpg"> - 
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/app-work-mode-3.jpg"> - 
 
 #### Температура
 

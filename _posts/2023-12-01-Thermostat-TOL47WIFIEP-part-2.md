@@ -8,8 +8,6 @@ tags: iot, smart-home, wifi, climate
 ---
 
 
-
-
 # Черновик!
 
 ## 1
