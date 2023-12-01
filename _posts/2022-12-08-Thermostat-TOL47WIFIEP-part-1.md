@@ -51,33 +51,35 @@ tags: iot, smart-home, wifi, climate
 
 ### Интерфейс Устройства 
 
-#### Временной диапазон
-
-<img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-1.svg">
-
-В этой области располагаются иконки, отображающий текущую запись в расписании.
-
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-1-1.svg"> - 
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-1-2.svg"> - 
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-1-3.svg"> - 
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-1-4.svg"> - 
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-1-5.svg"> - 
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-1-6.svg"> - 
-
 
 #### День недели
 
+<img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-1.svg">
+
+В этой области располагаются значки, отображающий текущий день недели.
+
+
+#### Временной диапазон
+
 <img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-2.svg">
+
+В этой области располагаются значки обозначающие номер временного диапазона настроек, примененного в данный момент.
 
 
 #### Текущее время
 
 <img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-3.svg">
 
+Область с текущим временем.
 
 #### Статус сети
 
 <img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-4.svg">
+
+Область отображающая иконки статуса сети. В моей модели отображается только информация о wifi. 
+* Если не горит - беспроводная связь не доступна или отключена.
+* Если мигает - поиск сети или установка соединения.
+* Если горит стабильно - соединение установлено.
 
 
 #### Режим работы
@@ -96,11 +98,6 @@ tags: iot, smart-home, wifi, climate
   alt: Актуальная температура
   des: Актуальная температура
 {% endimageblock %}
-
-
-
-
-
 
 
 ## Режимы работы
@@ -127,64 +124,3 @@ tags: iot, smart-home, wifi, climate
   alt: Режим работы по расписанию
   des: Выбор работы по расписанию
 {% endimageblock %}
-
-
-# Черновик!
-
-## 1
-
-Для управления температурой на балконе я решил приобрести простой контроллер температуры. Мой выбор остановился на контроллере Beok Tuya TOL47WIFI-EP. Такой выбор был обусловлен его стилем, приятным экраном, и простым и понятным интерфейсов управления. Так же основным критерием выбора послужила экосистема Tuya (точнее устройства этой системы, подробнее далее).
-
-## 2
-
-Изучив информацию и заметки многих авторов. Я нашел подходящее решение для реализации своей [концепции]({{ "/2022/12/06/Smart-home-concept.html" | relative_url }}) устройства умного дома. Особенностью данного контроллера является наличие Wifi модуля производства [Tuya WBR3](https://developer.tuya.com/en/docs/iot/wbr3-module-datasheet?id=K9dujs2k5nriy). Этот модуль является интерфейсом для экосистемы Tuya, но при этом он не является обязательной частью устройства. Все его свойства выполняет контроллер CMS8S5887. Дополнительно Особенностью этого контроллера, его полная аппаратная совместимость с модулем [ESP8685-WROOM-01](https://www.espressif.com/sites/default/files/documentation/esp8685-wroom-01_datasheet_en.pdf) или его аналога [ESP-12 Series](https://www.esp8266.com/wiki/doku.php?id=esp8266-module-family). Что это нам дает? К сожалению WBR3 и ESP8266 не совместимы программно... Тем самым мы можем просто подменить данный модуль. Останется только повторить [протокол общения](https://developer.tuya.com/en/docs/iot/tuya-cloud-universal-serial-port-access-protocol?id=K9hhi0xxtn9cb).
-
-{% imageblock %}
-- url: /posts/TOL47WIFIEP/WBR3.png
-  alt: Модуль WBR3
-  des: Распиновка модуля WBR3
-
-- url: /posts/TOL47WIFIEP/ESP12.png
-  alt: Модуль ESP-12 Series
-  des: Распиновка модуля ESP-12 Series
-{% endimageblock %}
-
-## 3
-
-# Изображения для статьи
-
-{% imageblock %}
-- url: /posts/TOL47WIFIEP/internal-organization-1.jpg
-  alt: Внутреннее устройство
-  des: Внутреннее устройство
-{% endimageblock %}
-
-{% imageblock %}
-- url: /posts/TOL47WIFIEP/main-board-1.jpg
-  alt: Основная плата устройства
-  des: Плата устройства
-
-- url: /posts/TOL47WIFIEP/main-board-2.jpg
-  alt: Основная плата устройства
-  des: MCU контроллер CMS8S5887
-{% endimageblock %}
-
-{% imageblock %}
-- url: /posts/TOL47WIFIEP/power-unit-1.jpg
-  alt: Источник питания
-  des: Источник питания при открытии устройства
-
-- url: /posts/TOL47WIFIEP/power-unit-2.jpg
-  alt: Источник питания
-  des: Источник питания, разъемы и реле
-
-- url: /posts/TOL47WIFIEP/power-unit-3.jpg
-  alt: Источник питания
-  des: Обратная сторона источника питания
-{% endimageblock %}
-
-
-
-
-
-
