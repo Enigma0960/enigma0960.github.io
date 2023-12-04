@@ -86,11 +86,11 @@ tags: iot, smart-home, wifi, climate
 
 <img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-5.svg">
 
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-work-mode-1.svg"> -
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-work-mode-2.svg"> -
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-work-mode-3.svg"> -
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-work-mode-4.svg"> -
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-work-mode-5.svg"> -
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-work-mode-1.svg"> - Активен нагрев
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-work-mode-2.svg"> - Ручное управление
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-work-mode-3.svg"> - Защита от переохлаждения
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-work-mode-4.svg"> - Работа по расписанию
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-work-mode-5.svg"> - Устройство заблокировано
 
 
 #### Температура
