@@ -82,13 +82,16 @@ tags: iot, smart-home, wifi, climate
 * Если горит стабильно - соединение установлено.
 
 
-#### Режим работы
+#### Режим
 
 <img class="image-center" src="/posts/TOL47WIFIEP/ui/ui-5.svg">
 
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/app-work-mode-1.jpg"> - 
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/app-work-mode-2.jpg"> - 
-* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/app-work-mode-3.jpg"> - 
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-work-mode-1.svg"> -
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-work-mode-2.svg"> -
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-work-mode-3.svg"> -
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-work-mode-4.svg"> -
+* <img class="image-in-list" src="/posts/TOL47WIFIEP/ui/ui-work-mode-5.svg"> -
+
 
 #### Температура
 
@@ -110,8 +113,6 @@ tags: iot, smart-home, wifi, climate
   alt: Главный экран приложение
   des: Главный экран приложение
 {% endimageblock %}
-
-Для дистанционного управления устройством можно использовать приложение Smart Live.
 
 
 ## Режимы работы
@@ -152,9 +153,4 @@ tags: iot, smart-home, wifi, climate
   des: Настройки расписания выходного дня
 {% endimageblock %}
 
-В зависимости от выбранного типа расписания можно настройть разные диапазоны времени.
-
-
-## Полезная документация
-
-Инструкция на устройство: [Beko Tuya TOL47]({{ "posts/TOL47WIFIEP/TOL47WIFIEP.pdf" | relative_url }})
+В зависимости от выбранного типа расписания можно настройть разные диапазоны времени. 
