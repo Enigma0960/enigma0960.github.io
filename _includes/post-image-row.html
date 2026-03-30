@@ -1,0 +1,30 @@
+{% assign columns = include.columns | default: 2 %}
+
+<div class="post-image-row post-image-row--{{ columns }}">
+    {% if include.src1 %}
+        {% include post-image.html
+            src=include.src1
+            alt=include.alt1
+            caption=include.caption1
+            class="post-image--in-row"
+        %}
+    {% endif %}
+
+    {% if include.src2 %}
+        {% include post-image.html
+            src=include.src2
+            alt=include.alt2
+            caption=include.caption2
+            class="post-image--in-row"
+        %}
+    {% endif %}
+
+    {% if include.src3 %}
+        {% include post-image.html
+            src=include.src3
+            alt=include.alt3
+            caption=include.caption3
+            class="post-image--in-row"
+        %}
+    {% endif %}
+</div>

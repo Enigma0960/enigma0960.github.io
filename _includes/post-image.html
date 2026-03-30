@@ -1,0 +1,20 @@
+{% assign image_src = include.src | default: include.url %}
+{% assign image_alt = include.alt | default: "" %}
+{% assign image_caption = include.caption | default: include.des %}
+{% assign image_href = include.href | default: image_src %}
+{% assign image_class = include.class | default: "" %}
+{% assign image_loading = include.loading | default: "lazy" %}
+
+<figure class="post-image {{ image_class }}">
+    <a href="{{ image_href | relative_url }}" target="_blank" rel="noopener noreferrer">
+        <img
+                src="{{ image_src | relative_url }}"
+                alt="{{ image_alt | escape }}"
+                loading="{{ image_loading }}"
+        >
+    </a>
+
+    {% if image_caption and image_caption != "" %}
+    <figcaption>{{ image_caption }}</figcaption>
+    {% endif %}
+</figure>

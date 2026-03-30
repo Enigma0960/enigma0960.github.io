@@ -2,3 +2,79 @@
 ---
 
 @import "minima/skins/{{ site.minima.skin | default: 'classic' }}", "minima/initialize";
+
+
+.post-image {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.post-image a {
+  display: block;
+}
+
+.post-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.post-image figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.post-image-row {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  align-items: stretch;
+}
+
+.post-image-row .post-image {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-image-row .post-image a {
+  display: block;
+  flex: 1 1 auto;
+}
+
+.post-image-row .post-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 260px; /* можно подобрать */
+  object-fit: cover;
+}
+
+.post-image-row .post-image figcaption {
+  flex-shrink: 0;
+}
+
+.post-image-row--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.post-image-row--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 700px) {
+  .post-image-row--2,
+  .post-image-row--3 {
+    grid-template-columns: 1fr;
+  }
+
+  .post-image-row .post-image img {
+    min-height: auto;
+    height: auto;
+    object-fit: contain;
+  }
+}
