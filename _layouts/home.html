@@ -18,23 +18,15 @@ layout: default
     {{ content }}
 </div>
 
-<div class="last-posts-block">
-    <h1>Последние статьи</h1>
-    {% for post in site.posts limit: 10 %}
-    <ul class="post-list">
-        <li>
-            {% if post.published %}
-            <span class="post-meta">{{ post.published | date: date_format }}</span>
-            {% else %}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            {% endif %}
-            <a class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
-            </a>
-            {% if post.description %}
-            <p class="post-content">{{ post.description | escape }}</p>
-            {% endif %}
-        </li>
-    </ul>
-    {% endfor %}
-</div>
+<section class="last-posts-block">
+    <div class="section-heading">
+        <h1>Последние статьи</h1>
+        <a class="section-heading__link" href="{{ '/posts/' | relative_url }}">Все статьи</a>
+    </div>
+
+    <div class="post-feed">
+        {% for post in site.posts limit: 10 %}
+        {% include post-card.html post=post %}
+        {% endfor %}
+    </div>
+</section>

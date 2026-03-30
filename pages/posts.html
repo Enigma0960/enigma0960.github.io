@@ -10,24 +10,12 @@ permalink: /posts/
 {% assign posts = site.posts %}
 {% endif %}
 
-{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+<div class="post-archive">
+    <p class="post-archive__lead">Все опубликованные статьи и заметки по проектам.</p>
 
-<div class="post-content">
-    {%- for post in posts -%}
-    <ul class="post-list">
-        <li>
-            {% if post.published %}
-            <span class="post-meta">{{ post.published | date: date_format }}</span>
-            {% else %}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            {% endif %}
-            <a class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
-            </a>
-            {% if post.description %}
-            <p class="post-content">{{ post.description | escape }}</p>
-            {% endif %}
-        </li>
-    </ul>
-    {%- endfor -%}
+    <div class="post-feed">
+        {%- for post in posts -%}
+        {% include post-card.html post=post %}
+        {%- endfor -%}
+    </div>
 </div>

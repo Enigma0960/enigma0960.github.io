@@ -1,0 +1,29 @@
+{%- assign post_item = include.post -%}
+{%- assign date_format = site.date_format | default: "%d.%m.%Y" -%}
+
+<article class="post-card">
+    <div class="post-card__meta">
+        <time datetime="{{ post_item.date | date_to_xmlschema }}">{{ post_item.date | date: date_format }}</time>
+        {%- if post_item.updated -%}
+        <span class="post-card__separator">•</span>
+        <span>Обновлено {{ post_item.updated | date: date_format }}</span>
+        {%- endif -%}
+    </div>
+
+    <h2 class="post-card__title">
+        <a class="post-card__link" href="{{ post_item.url | relative_url }}">{{ post_item.title | escape }}</a>
+    </h2>
+
+    {%- if post_item.description -%}
+    <p class="post-card__description">{{ post_item.description | escape }}</p>
+    {%- endif -%}
+
+    {%- if post_item.tags and post_item.tags.size > 0 -%}
+    <div class="post-card__tags">
+        {%- for tag in post_item.tags -%}
+        <a class="tag-chip tag-chip--small" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag
+            }}</a>
+        {%- endfor -%}
+    </div>
+    {%- endif -%}
+</article>

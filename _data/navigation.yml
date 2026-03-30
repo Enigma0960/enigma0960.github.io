@@ -1,0 +1,8 @@
+-   title: Главная
+    url: /
+-   title: Статьи
+    url: /posts/
+-   title: Теги
+    url: /tags/
+-   title: Обо мне
+    url: /about/

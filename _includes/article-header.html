@@ -1,0 +1,44 @@
+{%- assign date_format = site.date_format | default: "%d.%m.%Y" -%}
+{%- assign updated_value = page.updated | default: page.modified_date -%}
+
+<header class="article-header{% if include.compact %} article-header--compact{% endif %}">
+    <div class="article-header__main">
+        <h1 class="post-title p-name article-header__title" itemprop="name headline">{{ page.title | escape }}</h1>
+
+        {%- if page.description -%}
+        <p class="article-header__description">{{ page.description | escape }}</p>
+        {%- endif -%}
+
+        <div class="article-header__meta">
+                <span class="article-header__meta-item">
+                Опубликовано:
+                <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                    {{ page.date | date: date_format }}
+                </time>
+            </span>
+
+            {%- if updated_value -%}
+            <span class="article-header__meta-item">
+                Обновлено:
+                <time class="dt-modified" datetime="{{ updated_value | date_to_xmlschema }}" itemprop="dateModified">
+                    {{ updated_value | date: date_format }}
+                </time>
+            </span>
+            {%- endif -%}
+
+            {%- if page.project -%}
+            <span class="article-header__meta-item">
+                Проект: {{ page.project | escape }}
+            </span>
+            {%- endif -%}
+        </div>
+    </div>
+
+    {%- if page.tags and page.tags.size > 0 -%}
+    <div class="article-header__tags" aria-label="Теги статьи">
+        {%- for tag in page.tags -%}
+        <a class="tag-chip" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>
+        {%- endfor -%}
+    </div>
+    {%- endif -%}
+</header>

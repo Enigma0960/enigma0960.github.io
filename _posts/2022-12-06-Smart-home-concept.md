@@ -1,10 +1,14 @@
 ---
 layout: post
 title: "Концепция умного дома"
-published: "2022.12.06"
-updated: "2022.12.06"
 description: "Статья посвящена краткому описанию концепций, которых я придерживаюсь при создании умного дома в своей квартире."
-tags: iot, smart-home
+date: 2022-12-06
+updated: 2022-12-06
+tags:
+    - iot
+    - smart-home
+project: smart-home
+status: published
 ---
 
 ## С чего все началось

@@ -10,14 +10,10 @@
               </span>
             </label>
             <div class="trigger">
-                {%- assign index_page = site.pages | where: "name", "index.md" | first -%}
-                {%- assign posts_page = site.pages | where: "name", "posts.html" | first -%}
-                {%- assign about_page = site.pages | where: "name", "about.md" | first -%}
-
-                <a class="page-link" href="{{ index_page.url | relative_url }}">{{ index_page.title | escape }}</a>
-                <a class="page-link" href="{{ posts_page.url | relative_url }}">{{ posts_page.title | escape }}</a>
-                <a class="page-link" href="{{ about_page.url | relative_url }}">{{ about_page.title | escape }}</a>
-            </div>
+                {%- for item in site.data.navigation -%}
+                <a class="page-link{% if page.url == item.url %} page-link--active{% endif %}"
+                   href="{{ item.url | relative_url }}">{{ item.title | escape }}</a>
+                {%- endfor -%}
         </nav>
     </div>
 </header>

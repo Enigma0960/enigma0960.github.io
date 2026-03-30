@@ -1,7 +1,5 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
-
-
 .site-header-image {
   background-image: url("/assets/img/index-header.jpg");
   background-color: #919191;
@@ -65,5 +63,164 @@
 @media only screen and (min-width: 768px) {
   .site-header-image .site-heading h1 {
     font-size: 80px;
+  }
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.section-heading__link {
+  font-size: 0.95rem;
+}
+
+.post-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-card {
+  padding: 20px 22px;
+  border: 1px solid rgba(127, 127, 127, 0.2);
+  border-radius: 14px;
+  background: rgba(127, 127, 127, 0.05);
+}
+
+.post-card__meta,
+.article-header__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.post-card__title,
+.article-header__title {
+  margin: 8px 0 0;
+}
+
+.post-card__description,
+.article-header__description,
+.tags-page__lead,
+.post-archive__lead,
+.footer-text {
+  color: #4b5563;
+}
+
+.post-card__description,
+.article-header__description {
+  margin: 10px 0 0;
+}
+
+.post-card__tags,
+.article-header__tags,
+.tags-page__cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.tag-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(127, 127, 127, 0.12);
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+.tag-chip:hover {
+  text-decoration: none;
+  background: rgba(127, 127, 127, 0.2);
+}
+
+.tag-chip--small {
+  padding: 4px 10px;
+  font-size: 0.86rem;
+}
+
+.tag-chip__count {
+  opacity: 0.8;
+}
+
+.article-header {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(127, 127, 127, 0.16);
+}
+
+.tags-page__groups {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 28px;
+}
+
+.tag-group__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.tag-group__title {
+  margin: 0;
+}
+
+.tag-group__count {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.page-link--active {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-col-wrapper--custom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links img {
+  width: 18px;
+  height: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .section-heading,
+  .tag-group__header,
+  .footer-col-wrapper--custom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post-card {
+    padding: 18px;
   }
 }

@@ -3,6 +3,38 @@ layout: page
 title: Теги
 permalink: /tags/
 ---
+{%- assign sorted_tags = site.tags | sort -%}
+<div class="tags-page">
+    <p class="tags-page__lead">Тематическая навигация по статьям и заметкам.</p>
 
+    {%- if sorted_tags.size > 0 -%}
+    <div class="tags-page__cloud" aria-label="Список тегов">
+        {%- for tag_item in sorted_tags -%}
+        {%- assign tag_name = tag_item[0] -%}
+        {%- assign tag_posts = tag_item[1] -%}
+        <a class="tag-chip" href="#{{ tag_name | slugify }}">#{{ tag_name }} <span class="tag-chip__count">{{ tag_posts | size }}</span></a>
+        {%- endfor -%}
+    </div>
 
-{{page}}
+    <div class="tags-page__groups">
+        {%- for tag_item in sorted_tags -%}
+        {%- assign tag_name = tag_item[0] -%}
+        {%- assign tag_posts = tag_item[1] -%}
+        <section class="tag-group" id="{{ tag_name | slugify }}">
+            <div class="tag-group__header">
+                <h2 class="tag-group__title">#{{ tag_name }}</h2>
+                <span class="tag-group__count">{{ tag_posts | size }} статей</span>
+            </div>
+
+            <div class="post-feed">
+                {%- for post in tag_posts -%}
+                {% include post-card.html post=post %}
+                {%- endfor -%}
+            </div>
+        </section>
+        {%- endfor -%}
+    </div>
+    {%- else -%}
+    <p>Теги пока не добавлены.</p>
+    {%- endif -%}
+</div>

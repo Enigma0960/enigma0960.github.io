@@ -1,11 +1,29 @@
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+    - jekyll-feed
+    - jekyll-seo-tag
 
 title: Блог Enigma0960
+lang: ru
 author:
-  name: Igor Supryadkin
-  email: igorsupr@google.com
-description: Мой личный блог, где я делюсь своим опытом в разработке и реверс-инжиниринге.
+    name: Igor Supryadkin
+    email: igorsupr@google.com
+description: >-
+    Мой личный блог, где я делюсь опытом разработки, реверс-инжиниринга,
+    домашней инфраструктуры и заметками по своим проектам.
 
 show_excerpts: true
+date_format: "%d.%m.%Y"
+
+collections:
+    posts:
+        output: true
+        permalink: /:categories/:year/:month/:day/:title/
+
+defaults:
+    -   scope:
+            path: ""
+            type: "posts"
+        values:
+            layout: post
+            author: Igor Supryadkin
+            status: published
