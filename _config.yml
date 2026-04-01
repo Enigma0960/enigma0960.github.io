@@ -1,6 +1,7 @@
 plugins:
     - jekyll-feed
     - jekyll-seo-tag
+    - jekyll-sitemap
 
 title: Блог Enigma0960
 lang: ru
@@ -10,6 +11,7 @@ author:
 description: >-
     Мой личный блог, где я делюсь опытом разработки, реверс-инжиниринга,
     домашней инфраструктуры и заметками по своим проектам.
+url: "https://enigma0960.github.io"
 
 show_excerpts: true
 date_format: "%d.%m.%Y"

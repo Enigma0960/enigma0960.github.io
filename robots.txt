@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enigma0960.github.io/sitemap.xml
